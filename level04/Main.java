@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-        Range range = new Range(0, 2);
+        Range range = new Range(0, 3);
 
         Iterator<Integer> manual = range.iterator();
 

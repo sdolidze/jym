@@ -7,6 +7,12 @@ public class RangeIterator implements Iterator<Integer> {
     private int from;
     private int to;
 
+    /**
+     * Range: [from, to)
+     * 
+     * @param from inclusive
+     * @param to   exclusive
+     */
     public RangeIterator(int from, int to) {
         this.from = from;
         this.to = to;
@@ -14,8 +20,7 @@ public class RangeIterator implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-
-        return from <= to;
+        return from < to;
     }
 
     @Override

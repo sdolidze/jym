@@ -6,21 +6,29 @@ public class Main {
     public static void main(String[] args) {
         Range range = new Range(0, 3);
 
-        Iterator<Integer> manual = range.iterator();
+        Iterator<Integer> one = range.iterator();
+        Iterator<Integer> two = range.iterator();
 
-        System.out.println(manual.hasNext());
-        System.out.println(manual.next());
+        one.next();
+        two.hasNext();
+
+        System.out.println(one.hasNext());
+        System.out.println(one.next());
+        System.out.println(two.hasNext());
+        System.out.println(two.next());
         System.out.println();
 
-        System.out.println(manual.hasNext());
-        System.out.println(manual.next());
+        one.hasNext();
+        two.next();
+
+        System.out.println(one.hasNext());
+        System.out.println(one.next());
+        System.out.println(two.hasNext());
+        System.out.println(two.next());
         System.out.println();
 
-        System.out.println(manual.hasNext());
-        System.out.println(manual.next());
-        System.out.println();
-
-        System.out.println(manual.hasNext());
+        System.out.println(one.hasNext());
+        System.out.println(two.hasNext());
         System.out.println();
 
         System.out.println();

@@ -1,31 +1,38 @@
 package level05;
 
+import java.util.Arrays;
+
 public class Main {
     public static void p1() {
-        int a = 0;
-        final int b = 1;
+        int a0 = 0;
+        final int a1 = 1;
+        int[] a2 = new int[] { 2 };
 
-        a++;
-        // b++;
+        a0++;
+        // a1++;
+        a2[0]++;
 
-        System.out.println(a);
-        System.out.println(b);
+        System.out.println(a0);
+        System.out.println(a1);
+        System.out.println(Arrays.toString(a2));
         System.out.println();
 
-        Box<Integer> c = new Box<Integer>(2);
-        final Box<Integer> d = new Box<Integer>(3);
+        // ----------
 
-        c = new Box<Integer>(4);
-        // d = new Box<Integer>(5);
+        Box<Integer> b0 = new Box<Integer>(2);
+        final Box<Integer> b1 = new Box<Integer>(3);
 
-        c.setValue(6);
-        c.setValue(7);
+        b0 = new Box<Integer>(4);
+        // b1 = new Box<Integer>(5);
 
-        c.apply(x -> x + 10);
-        c.apply(x -> x + 11);
+        b0.setValue(6);
+        b1.setValue(7);
 
-        System.out.println(c);
-        System.out.println(d);
+        b0.apply(x -> x + 10);
+        b1.apply(x -> x + 11);
+
+        System.out.println(b0);
+        System.out.println(b1);
         System.out.println();
 
     }

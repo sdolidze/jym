@@ -6,7 +6,7 @@ public class Main {
     public static void p1() {
         int a0 = 0;
         final int a1 = 1;
-        int[] a2 = new int[] { 2 };
+        final int[] a2 = new int[] { 2 };
 
         a0++;
         // a1++;
